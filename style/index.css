@@ -53,7 +53,7 @@ body {
     color: #1551B1;
 }
 
-.navigation nav ul li a:before {
+.navigation nav ul li a::before {
     content: "";
   position: absolute;
   width: 0;
@@ -65,7 +65,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.navigation nav ul li a:hover:before {
+.navigation nav ul li a:hover::before {
     visibility: visible;
     width: 100%;
   }
@@ -94,24 +94,6 @@ body {
 }
 
 
-/* breadcrumb */
-.breadcrumb {
-    background-color: wheat;
-}
-
-.first {
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(../images/cspcover.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* height: 500px;
-    height: calc(100vh - 25px);
-    display:flex;
-    align-items: center;
-    justify-content: center; */
-    
-  }
-
 .profile  {
     max-width: 16vw;
     height: auto;
@@ -131,9 +113,34 @@ h1 {
     font-family: Prata, serif;
 }
 
-.intro a {
+.heroImg div h1 a {
     color:#1551B1;
+    text-decoration: none;
+    text-decoration: underline;
 }
+
+.heroImg div h1 a:hover {
+    color: #1551B1;
+    text-decoration-thickness: 5px;
+
+}
+
+h1.intro a::before {
+    content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color:black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+h1.intro a:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
 
 .green {
     color: green;
@@ -154,6 +161,7 @@ h1 {
     font-size: 14px;
     line-height: 150%;
     text-align: center;
+    color: #252E36;
 }
 
 button {

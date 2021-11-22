@@ -45,10 +45,14 @@ body {
 .navigation nav ul li a {
     position: relative;
     text-decoration: none;
+    color: #b5b5b5;
+}
+
+.navigation nav ul li a:hover {
     color: #1551B1;
 }
 
-.navigation nav ul li a:before {
+.navigation nav ul li a::before {
     content: "";
   position: absolute;
   width: 0;
