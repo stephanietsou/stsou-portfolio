@@ -114,15 +114,28 @@ h1 {
 }
 
 .heroImg div h1 a {
+    color: #1551B1;
+    text-decoration: none;
+    border-bottom: 2px solid #1551B1;
+}
+
+.heroImg div h1 a:hover {
+    border-bottom: 8px solid #1551B1 ; 
+    transition: border-bottom 200ms;
+}
+
+
+/* .heroImg div h1 a {
     color:#1551B1;
     text-decoration: none;
     text-decoration: underline;
+    transition: text-decoration 2s ease;
 }
 
 .heroImg div h1 a:hover {
     color: #1551B1;
-    text-decoration-thickness: 5px;
-
+    text-decoration-thickness: 10px;
+    transition: text-decoration 2s ease;
 }
 
 h1.intro a::before {
@@ -140,7 +153,7 @@ h1.intro a::before {
 h1.intro a:hover::before {
     visibility: visible;
     width: 100%;
-  }
+  } */
 
 .green {
     color: green;
@@ -224,6 +237,16 @@ button a:active {
     bottom: 0;
     
 } */
+
+.myWorkImages {
+    border: 2px solid green;
+}
+.myWorkImages div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+}
 
 .mySkills h1 {
     /* background-color: gray; */
