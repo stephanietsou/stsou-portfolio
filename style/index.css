@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+p {
+    font-family: Graphik;
+}
+
 body {
     max-width: 100vw;
     margin: 0;
@@ -89,9 +93,9 @@ body {
     cursor: pointer;
 }
 
-.logo a .logo-font:hover {
+/* .logo a .logo-font:hover {
     color: #82a4f2;
-}
+} */
 
 
 .profile  {
@@ -116,44 +120,14 @@ h1 {
 .heroImg div h1 a {
     color: #1551B1;
     text-decoration: none;
-    border-bottom: 2px solid #1551B1;
+    border-bottom: 3px dotted #EADBB4;
 }
 
 .heroImg div h1 a:hover {
-    border-bottom: 8px solid #1551B1 ; 
-    transition: border-bottom 200ms;
+    border-bottom: 8px dotted #EADBB4 ; 
+    transition: border-bottom 100ms;
 }
 
-
-/* .heroImg div h1 a {
-    color:#1551B1;
-    text-decoration: none;
-    text-decoration: underline;
-    transition: text-decoration 2s ease;
-}
-
-.heroImg div h1 a:hover {
-    color: #1551B1;
-    text-decoration-thickness: 10px;
-    transition: text-decoration 2s ease;
-}
-
-h1.intro a::before {
-    content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: -5px;
-  left: 0;
-  background-color:black;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-h1.intro a:hover::before {
-    visibility: visible;
-    width: 100%;
-  } */
 
 .green {
     color: green;
@@ -238,14 +212,58 @@ button a:active {
     
 } */
 
-.myWorkImages {
+
+/* .myWorkImages {
     border: 2px solid green;
+} */
+
+.myWorkHeading div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid pink;
 }
-.myWorkImages div {
+
+.myWorkHeading p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2vh;
+}
+
+.myWorkImages div a {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid red;
+}
+
+.myWorkImages div h1 {
+    color: #252E36;
+    /* border: 2px solid purple; */
+}
+
+.myWorkImages div p {
+    color: #252E36;
+    line-height: 150%;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.02);
 }
 
 .mySkills h1 {
@@ -387,9 +405,16 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #1551B1;
+    color: #b5b5b5;
     font-family: Graphik, sans-serif;
 }
+
+footer ul li a:hover {
+    color: #1551B1;
+    border-bottom: 3px solid #EADBB4;
+    transition: 100ms;
+}
+
 
 @media only screen and (max-width: 890px) {
     /* body {

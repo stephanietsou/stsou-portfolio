@@ -89,10 +89,27 @@ body {
     cursor: pointer;
 }
 
-.logo a .logo-font:hover {
+/* .logo a .logo-font:hover {
     color: #82a4f2;
+} */
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
 }
 
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.02);
+}
 
 .profile  {
     max-width: 16vw;
@@ -233,7 +250,11 @@ button a:active {
     flex-direction: column;
     align-items: center;
 }
-
+.myTools h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .flexContainer {
     /* background-color: honeydew; */
     display: flex;
@@ -261,6 +282,9 @@ button a:active {
     margin: 0 1em;
 }
 
+.myTools .flexContainer h3 {
+    font-weight: 400;
+}
 /* .flexContainer img {
     border-radius: 50%;
 } */
@@ -282,7 +306,7 @@ button a:active {
     display: grid;
     grid-template-columns: repeat(2);
     grid-gap: 2em;
-    /* border: 1px solid gray; */
+    border: 1px solid green;
 }
 
 .workGrid div:first-child {
@@ -290,7 +314,7 @@ button a:active {
     justify-self: center;
     align-self: center;
     position:initial;
-    /* border: 1px solid red; */
+    border: 2px solid red;
 }
 
 /* .workGrid div img {
@@ -299,6 +323,7 @@ button a:active {
 
 .workGrid div:nth-of-type(2) {
     grid-column: 2/3;
+    border: 2px solid pink;
 }
 
 .workGrid div:nth-of-type(3) {
@@ -312,6 +337,10 @@ button a:active {
 }
 
 
+
+.workGrid {
+    border: 2px solid purple;
+}
 
 .aboutMe h3 {
     font-family: Graphik;
@@ -378,8 +407,14 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #1551B1;
+    color: #b5b5b5;
     font-family: Graphik, sans-serif;
+}
+
+footer ul li a:hover {
+    color: #1551B1;
+    border-bottom: 3px solid #EADBB4;
+    transition: 100ms;
 }
 
 @media only screen and (max-width: 890px) {
@@ -389,6 +424,7 @@ footer ul li a {
 
     .flexContainer {
         flex-direction: column;
+        align-items: center;
     }
 
     .flexContainer div {
